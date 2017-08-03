@@ -1,0 +1,25 @@
+{
+  "name": "jam-jar",
+  "version": "0.0.0",
+  "description": "A web scraper for Ludum Dare entries, so you can stay up to date with your entry stats and comments. Edit",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multi-cell/jam-jar.git"
+  },
+  "keywords": [
+    "Ludum",
+    "Dare",
+    "games",
+    "gamedev"
+  ],
+  "author": "Graham Barber <grahammbarber@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/multi-cell/jam-jar/issues"
+  },
+  "homepage": "https://github.com/multi-cell/jam-jar#readme"
+}
