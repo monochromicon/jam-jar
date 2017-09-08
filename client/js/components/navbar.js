@@ -30,13 +30,13 @@ const NavBar = (state, actions) => {
       <div class="field is-grouped is-grouped-multiline">
         <div class="control">
           <div class="tags has-addons">
-            <div class="tag">Event #</div>
+            <div class="tag is-dark">Event #</div>
             <div class="tag is-warning">LD${state.eventNum}</div>
           </div>
         </div>
         <div class="control">
           <div class="tags has-addons">
-            <div class="tag">Theme</div>
+            <div class="tag is-dark">Theme</div>
             <div class="tag is-warning">${state.theme}</div>
           </div>
         </div>
