@@ -7,15 +7,15 @@ const html = hyperx(h)
 
 const NavBar = (state, actions) => {
   const linkOps = {
-    home: {to: '/', go: actions.router.go, class: 'navbar-item'},
-    info: {to: '/info', go: actions.router.go, class: 'navbar-item'},
-    stats: {to: '/stats', go: actions.router.go, class: 'navbar-item'},
+    dashboard: {to: '/', go: actions.router.go, class: 'navbar-item'},
     comments: {to: '/comments', go: actions.router.go, class: 'navbar-item'}
   }
 
-  return html`<nav class="navbar">
+  return html`<nav class="navbar is-transparent">
   <div class="navbar-brand">
-    <h1 class="navbar-item">jam-jar</h1>
+    <div class="navbar-item is-uppercase">
+      <a href="${state.ldjam}"><strong>${state.title}</strong></a>
+    </div>
 
     <div class="navbar-burger" data-target="navMenu">
       <span></span>
@@ -26,10 +26,24 @@ const NavBar = (state, actions) => {
 
   <div id="navMenu" class="navbar-menu">
     <div class="navbar-end">
-      ${Link(linkOps.home, 'Home')}
-      ${Link(linkOps.info, 'Info')}
-      ${Link(linkOps.stats, 'Stats')}
-      ${Link(linkOps.comments, 'Comments')}
+    <div class="navbar-item">
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons">
+            <div class="tag">Event #</div>
+            <div class="tag is-warning">LD${state.eventNum}</div>
+          </div>
+        </div>
+        <div class="control">
+          <div class="tags has-addons">
+            <div class="tag">Theme</div>
+            <div class="tag is-warning">${state.theme}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ${Link(linkOps.dashboard, 'Dashboard')}
+    ${Link(linkOps.comments, 'Comments')}
     </div>
   </div>
 </nav>`
