@@ -53,6 +53,12 @@ export default {
     ['Source code', 'https://github.com/monochromicon/ludum-dare39'],
     ['HTML5 (web)', 'https://monochromicon.github.io/ludum-dare39/']
   ]),
+  authors: [
+    'http404error',
+    'PureGarlic',
+    'Dplusminus',
+    'Mamamacsparkles'
+  ],
   comments: [
     {
       name: 'Jason Kennedy',
