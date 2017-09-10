@@ -36,6 +36,7 @@ export default {
     }
   },
   metrics: {
+    qualified: true,
     karma: 3,
     given: 15.75,
     received: 20.8333,
