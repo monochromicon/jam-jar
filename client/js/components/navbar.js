@@ -4,7 +4,6 @@ import {Link} from '@hyperapp/router'
 
 const html = hyperx(h)
 
-
 const NavBar = (state, actions) => {
   const linkOps = {
     dashboard: {to: '/', go: actions.router.go, class: 'navbar-item'},
