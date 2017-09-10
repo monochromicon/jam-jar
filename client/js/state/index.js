@@ -43,6 +43,16 @@ export default {
     classic: 103.7749,
     smart: -9.0055
   },
+  description: [
+    'A game about the hero’s life after the quest. You saved the world, and now you’re back home, but your sacrifices are catching up with you. Speak with whoever matters to you most.',
+    'Arrow keys or A/D to move. Space/Enter to interact or skip.',
+    'There is no secret ending. Choose your own objective.',
+    'Made with Phaser + ES6 + Webpack.'
+  ],
+  links: new Map([
+    ['Source code', 'https://github.com/monochromicon/ludum-dare39'],
+    ['HTML5 (web)', 'https://monochromicon.github.io/ludum-dare39/']
+  ]),
   comments: [
     {
       name: 'Jason Kennedy',
