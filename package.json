@@ -38,5 +38,11 @@
     "webpack": "^3.4.1",
     "webpack-dashboard": "^0.4.0",
     "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@hyperapp/router": "^0.3.0",
+    "bulma": "^0.5.1",
+    "hyperapp": "^0.12.1",
+    "hyperx": "^2.3.0"
   }
 }
