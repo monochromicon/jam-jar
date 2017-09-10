@@ -3,6 +3,38 @@ export default {
   eventNum: '39',
   theme: 'Running out of Power',
   ldjam: 'https://ldjam.com/events/ludum-dare/39/when-it-counts',
+  stats: {
+    overall: {
+      place: '489th',
+      average: 3.263,
+      votes: 21
+    },
+    fun: {
+      place: '683rd',
+      average: 2.737,
+      votes: 21
+    },
+    theme: {
+      place: '388th',
+      average: 3.526,
+      votes: 21
+    },
+    mood: {
+      place: '284th',
+      average: 3.474,
+      votes: 21
+    },
+    graphics: {
+      place: '469th',
+      average: 3.389,
+      votes: 20
+    },
+    innovation: {
+      place: '280th',
+      average: 3.316,
+      votes: 21
+    }
+  },
   comments: [
     {
       name: 'Jason Kennedy',
