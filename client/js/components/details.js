@@ -20,7 +20,6 @@ const Links = links => {
   <a href="${val}">${val}</a>${res.length === links.size - 1 ? `` : html`<div><br></div>`}
 </div>`)
   })
-  console.log(res)
   return html`<div>
   <h5 class="title is-4">Links</h5>
   ${res.map(l => l)}
