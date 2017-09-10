@@ -35,6 +35,13 @@ export default {
       votes: 21
     }
   },
+  metrics: {
+    karma: 3,
+    given: 15.75,
+    received: 20.8333,
+    classic: 103.7749,
+    smart: -9.0055
+  },
   comments: [
     {
       name: 'Jason Kennedy',
