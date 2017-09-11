@@ -1,7 +1,11 @@
-import Author from './Author'
-import Mutation from './Mutation'
-import Post from './Post'
+import Game from './Game'
+import Link from './Link'
+import Stat from './Stat'
+import User from './User'
 import Query from './Query'
+import Metric from './Metric'
+import Comment from './Comment'
+import Mutation from './Mutation'
 
 export const Schema = `
 schema {
@@ -10,8 +14,12 @@ schema {
 }`
 
 export const Types = [
-  Author,
-  Mutation,
-  Post,
-  Query
+  Game,
+  Link,
+  Stat,
+  User,
+  Query,
+  Metric,
+  Comment,
+  Mutation
 ]
