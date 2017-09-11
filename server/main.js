@@ -2,7 +2,7 @@ import fs from 'fs'
 
 import {send} from 'micro'
 import {router, get, post} from 'microrouter'
-import {microGraphiql, microGraphql} from 'apollo-server-micro'
+const {microGraphiql, microGraphql} = require('apollo-server-micro')
 
 import schema from './schema'
 import * as ip from './routes/ip'
