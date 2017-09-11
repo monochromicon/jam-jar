@@ -1,4 +1,2 @@
-require = require('@std/esm')(module, {esm: 'js'})
-const init = require('./main').default
-
-init()
+require = require('@std/esm')(module, {esm: 'js', cjs: true})
+module.exports = require('./main').default
