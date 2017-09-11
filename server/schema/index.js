@@ -1,20 +1,10 @@
-import {
-  graphql,
-  GraphQLSchema,
-  GraphQLObjectType,
-  GraphQLString
-} from 'graphql'
+const {makeExecutableSchema} = require('graphql-tools')
 
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'RootQueryType',
-    fields: {
-      hello: {
-        type: GraphQLString,
-        resolve() {
-          return 'world'
-        }
-      }
-    }
-  })
+import typeDefs from './types'
+import resolvers from './resolvers'
+
+const executableSchema = makeExecutableSchema({
+  typeDefs, resolvers
 })
+
+export default executableSchema
