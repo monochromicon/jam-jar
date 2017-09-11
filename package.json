@@ -5,9 +5,10 @@
   "main": "server/index.js",
   "scripts": {
     "build": "webpack",
-    "dev:server": "webpack-dev-server --open",
-    "dev": "webpack-dashboard -- npm run dev:server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:client": "webpack-dev-server --open",
+    "dev:client-cli": "webpack-dashboard -- npm run dev:server",
+    "dev:server": "micro-dev server",
+    "start": "micro server"
   },
   "repository": {
     "type": "git",
@@ -32,18 +33,23 @@
     "graphql-tag": "^2.4.2",
     "html-loader": "^0.5.0",
     "html-webpack-plugin": "^2.30.1",
+    "micro-dev": "^1.2.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
     "webpack-dashboard": "^0.4.0",
-    "webpack-dev-server": "^2.6.1"
+    "webpack-dev-server": "^2.6.1",
+    "write-file-webpack-plugin": "^4.1.0"
   },
   "dependencies": {
     "@hyperapp/router": "^0.3.0",
     "@std/esm": "^0.8.3",
     "bulma": "^0.5.1",
     "hyperapp": "^0.12.1",
-    "hyperx": "^2.3.0"
+    "hyperx": "^2.3.0",
+    "ip": "^1.1.5",
+    "micro": "^8.0.4",
+    "microrouter": "^2.2.2"
   }
 }
