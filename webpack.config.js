@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const DashboardPlugin = require('webpack-dashboard/plugin')
+const WriteFilePlugin = require('write-file-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const config = {
@@ -44,7 +45,8 @@ const config = {
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new DashboardPlugin(),
-    new ExtractTextPlugin('dist/styles.css')
+    new ExtractTextPlugin('styles.css'),
+    new WriteFilePlugin()
   ]
 }
 
