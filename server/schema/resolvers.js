@@ -1,4 +1,16 @@
 import {find, filter} from 'lodash'
+import {
+  title,
+  eventNum,
+  theme,
+  url,
+  stats,
+  metrics,
+  description,
+  links,
+  authors,
+  comments
+} from '../data'
 
 const posts = [
   { id: 1, authorId: 1, title: 'Introduction to GraphQL', votes: 2 },
@@ -7,7 +19,7 @@ const posts = [
   { id: 4, authorId: 3, title: 'Launchpad is Cool', votes: 7 },
 ]
 
-const authors = [
+const authors2 = [
   { id: 1, firstName: 'Tom', lastName: 'Coleman' },
   { id: 2, firstName: 'Sashko', lastName: 'Stubailo' },
   { id: 3, firstName: 'Mikhail', lastName: 'Novikov' },
@@ -36,7 +48,7 @@ const resolvers = {
   },
   Post: {
     author(post) {
-      return find(authors, { id: post.authorId });
+      return find(authors2, { id: post.authorId });
     }
   }
 };
