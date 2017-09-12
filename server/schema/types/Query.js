@@ -1,6 +1,7 @@
 const Query = `
 type Query {
-  posts: [Post]
+  game: Game
+  comments: [Comment]
 }`
 
 export default Query

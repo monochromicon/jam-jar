@@ -1,5 +1,6 @@
 const Comment = `type Comment {
-  commenter: Author!
+  id: ID!
+  commenter: User!
   text: [String]
   time: String
   likes: Int

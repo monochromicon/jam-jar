@@ -1,6 +1,8 @@
 const Stat = `type Stat {
-  type: String
+  name: String
   place: String
+  average: Float
+  votes: Int
 }`
 
 export default Stat
