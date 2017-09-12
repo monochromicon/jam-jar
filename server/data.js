@@ -1,43 +1,49 @@
 export const title = 'When It Counts'
 
-export const eventNum = 39
+export const event = 39
 
 export const theme = 'Running out of Power'
 
 export const url = 'https://ldjam.com/events/ludum-dare/39/when-it-counts'
 
-export const stats = {
-  overall: {
+export const stats = [
+  {
+    name: 'overall',
     place: '489th',
     average: 3.263,
     votes: 21
   },
-  fun: {
+  {
+    name: 'fun',
     place: '683rd',
     average: 2.737,
     votes: 21
   },
-  theme: {
+  {
+    name: 'theme',
     place: '388th',
     average: 3.526,
     votes: 21
   },
-  mood: {
+  {
+    name: 'mood',
     place: '284th',
     average: 3.474,
     votes: 21
   },
-  graphics: {
+  {
+    name: 'graphics',
     place: '469th',
     average: 3.389,
     votes: 20
   },
-  innovation: {
+  {
+    name: 'innovation',
     place: '280th',
     average: 3.316,
     votes: 21
   }
-}
+]
 
 export const metrics = {
   qualified: true,
@@ -55,37 +61,54 @@ export const description = [
   'Made with Phaser + ES6 + Webpack.'
 ]
 
-export const links = new Map([
-  ['Source code', 'https://github.com/monochromicon/ludum-dare39'],
-  ['HTML5 (web)', 'https://monochromicon.github.io/ludum-dare39/']
-])
+export const links = [
+  {
+    type: 'Source code',
+    url: 'https:/github.com/monochromicon/ludum-dar39'
+  },
+  {
+    type: 'HTML5 (web)',
+    url: 'https://monochromicon.github.io/ludum-dare39/'
+  }
+]
 
 export const authors = [
   'http404error',
   'PureGarlic',
   'Dplusminus',
   'Mamamacsparkles'
-]
+].map(a => {
+  return {
+    name: a,
+    handle: a.replace(/ /, '-').toLowerCase()
+  }
+})
 
 export const comments = [
   {
-    name: 'Jason Kennedy',
-    text: 'more of an interactive fiction then a game. but a very interesting interactive fiction',
-    info: {
-      handle: '@jason-kennedy',
-      time: '5 weeks ago',
-      likes: 1,
-      photo: 'https://static.jam.vg/other/dummy/user64.png'
-    }
+    id: 0,
+    commenter: {
+      name: 'Jason Kennedy',
+      handle: 'jason-kennedy'
+    },
+    text: [
+      'more of an interactive fiction then a game. but a very interesting interactive fiction'
+    ],
+    time: '5 weeks ago',
+    likes: 1,
+    photo: 'https://static.jam.vg/other/dummy/user64.png'
   },
   {
-    name: 'Angela He',
-    text: 'This was a very interesting story :D They all want to say my name!! I like how the NPCs have unique characters and you can learn more about yourself by talking to them.',
-    info: {
-      handle: '@angela-he',
-      time: '5 weeks ago',
-      likes: 1,
-      photo: 'https://static.jam.vg/content/241/8/z/4d0f.jpg'
-    }
+    id: 1,
+    commenter: {
+      name: 'Angela He',
+      handle: 'angela-he'
+    },
+    text: [
+      'This was a very interesting story :D They all want to say my name!! I like how the NPCs have unique characters and you can learn more about yourself by talking to them.'
+    ],
+    time: '5 weeks ago',
+    likes: 1,
+    photo: 'https://static.jam.vg/content/241/8/z/4d0f.jpg'
   }
 ]
