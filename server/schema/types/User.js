@@ -1,5 +1,5 @@
 const User = `
-type Author {
+type User {
   name: String!
   handle: String
 }`

@@ -5,21 +5,10 @@ import User from './User'
 import Query from './Query'
 import Metric from './Metric'
 import Comment from './Comment'
-import Mutation from './Mutation'
 
 export const Schema = `
 schema {
   query: Query
-  mutation: Mutation
 }`
 
-export const Types = [
-  Game,
-  Link,
-  Stat,
-  User,
-  Query,
-  Metric,
-  Comment,
-  Mutation
-]
+export const Types = [Game, Link, Stat, User, Query, Metric, Comment]

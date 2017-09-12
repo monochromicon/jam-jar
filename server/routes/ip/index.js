@@ -1,4 +1,4 @@
-import {send} from 'micro'
+import { send } from 'micro'
 import ip from 'ip'
 
 export const get = async (req, res) => {
